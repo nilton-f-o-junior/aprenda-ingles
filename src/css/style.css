@@ -1,0 +1,38 @@
+/*
+  Colors provided by Catppuccin (https://github.com/catppuccin/catppuccin)
+  License: MIT
+  Copyright (c) 2021 Catppuccin
+*/
+
+:root {
+  --font-mono: 'JetBrains Mono', monospace;
+  --bg-color-pri: #89B4FA;
+  --bg-color-sec: #FFF;
+
+  --text-color-pri: #FFF;
+  --text-color-sec: #000;
+
+  --text-color-box-pri: #D9D9D9; 
+  --text-color-box-sec: #878787;
+  --text-color-box-tec: #A1A1A1;
+
+  --color-blue: #89B4FA;
+  --color-gray: #D9D9D9;
+  --color-green: #A6E3A1;
+  --color-orange: #FAB387;
+  --color-red: #EBA0AC;
+  --color-yellow: #FDD989;
+
+  --color-light-blue: #E1ECFF;
+  --color-light-gray: #F3F3F3;
+  --color-light-yellow: #FEF3D9;
+  --color-light-green: #CDEFCA;
+  --color-light-red: #FAE8EB; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
