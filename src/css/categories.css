@@ -1,0 +1,138 @@
+body {
+  background-color: var(--bg-color-sec);
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem);
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 100;
+}
+
+.github-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.github-icon a:hover { transform: scale(1.1); }
+
+.github-icon a:focus {
+  outline: 2px solid var(--bg-color-pri);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 42px;
+}
+
+.vocabulary-button {
+  font-family: var(--font-mono);
+  color: var(--text-color-pri);
+  font-size: var(--font-size-desktop);
+  width: 266px;
+  height: 64px;
+  border: none;
+  background: radial-gradient(circle at right, transparent 14px, var(--color-blue) 10px); 
+}
+
+.expressions-button {
+  font-family: var(--font-mono);
+  color: var(--text-color-pri);
+  font-size: 24px;
+  background-color: var(--color-blue);
+  width: 266px;
+  height: 64px;
+  position: relative;
+  margin-left: 20px;
+  border:none;
+}
+
+.expressions-button::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+}
+
+.vocabulary-button:hover{
+  background: radial-gradient(circle at right, transparent 14px, var(--color-yellow) 14px);
+}
+
+.expressions-button:hover {
+  background-color: var(--color-yellow);
+}
+
+.expressions-button:hover::before {
+  background-color: var(--color-yellow);
+}
+
+.vocabulary-button:active {
+  background: radial-gradient(circle at right, transparent 14px, var(--color-green) 14px);
+}
+
+.expressions-button:active {
+  background-color: var(--color-green);
+}
+
+.expressions-button:active::before {
+  background-color: var(--color-green);
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 1rem;
+    padding: 1.5rem;
+    min-height: calc(100vh - 2rem);
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .vocabulary-button {
+    font-size: var(--font-size-mobile);
+    width: 247px;
+    height: 56px;
+    background: radial-gradient(circle at right, transparent 9px, var(--color-blue) 9px);   }
+
+  .expressions-button {
+    font-size: var(--font-size-mobile);
+    width: 247px;
+    height: 56px;
+    margin-left: 0;
+  }
+
+  .expressions-button::before {
+    left: -10px;
+    width: 20px;
+    height: 20px;
+  }  
+} 
