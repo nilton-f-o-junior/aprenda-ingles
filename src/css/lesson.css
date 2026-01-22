@@ -1,0 +1,93 @@
+body { 
+  background-color: var(--bg-color-sec);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 32px; 
+}
+
+.menu-open-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex; 
+}
+
+.home-icon {
+  margin-left: auto;
+}
+
+.github-icon {
+  margin-left: 24px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);   
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 150;
+  pointer-events: none; 
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; 
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 224px;
+  height: 100vh; 
+  padding: 32px;
+  background-color: var(--color-blue);
+  z-index: 200;
+  overflow-y: auto; 
+  transform: translateX(0%); 
+  transition: transform 0.3s ease-in-out; 
+  will-change: transform; 
+}
+
+.side-bar.active {
+  transform: translateX(0);
+}
+
+.menu-close-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 24px;
+  display: flex; 
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--color-white);
+  padding-bottom: 4px;
+}
+
+.search-input {
+  font-family: var(--font-mono);
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  font-size: 1rem;
+  outline: none;
+  width: 100%; 
+  appearance: none; 
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}

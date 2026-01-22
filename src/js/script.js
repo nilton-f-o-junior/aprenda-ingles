@@ -25,4 +25,3 @@ if (startButton && dividerButton && playButton) {
 
 const vocabularyButton = document.querySelector('.vocabulary-button');
 const expressionsButton = document.querySelector('.expressions-button');
-
