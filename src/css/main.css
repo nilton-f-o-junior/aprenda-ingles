@@ -22,14 +22,11 @@
   /* Cores de texto */
   --text-color-pri: #FFF;
   --text-color-sec: #000;
-  --text-color-tec: #89B4FA;
-  --text-color-box-pri: #D9D9D9;
-  --text-color-box-sec: #878787;
-  --text-color-box-tec: #A1A1A1;
+  --text-color-tec: #5D5D5D;
   
   /* Cores principais */
   --color-blue: #89B4FA;
-  --color-gray: #D9D9D9;
+  --color-gray: #5D5D5D;
   --color-green: #A6E3A1;
   --color-orange: #FAB387;
   --color-red: #EBA0AC;
@@ -37,7 +34,7 @@
   --color-yellow: #FDD989;
   
   /* Cores claras */
-  --color-light-blue: #E1ECFF;
+  --color-light-blue: #D9E7FD;
   --color-light-gray: #F3F3F3;
   --color-light-yellow: #FEF3D9;
   --color-light-green: #CDEFCA;
