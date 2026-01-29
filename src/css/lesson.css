@@ -105,6 +105,14 @@ main {
   padding: 0 32px 32px;
 }
 
+h2 {
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  color: var(--text-color-qua);
+  margin: 32px 0px;
+}
+
 .card-translate {
   display: flex;
   align-items: flex-start; 
@@ -180,7 +188,7 @@ main {
   height: 64px;
   max-width: 800px;
   background-color: var(--color-light-yellow);
-  margin-top: 42px;
+  margin: 32px 0px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -195,4 +203,15 @@ main {
    color: var(--text-color-tec);
    font-style: italic;
   font-weight: bold;
+}
+
+footer {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ max-width: 800px;
+ width: 100%;
+ margin: 0 auto;
+ color: var(--text-color-qua);
+ gap: 12px;
 }
