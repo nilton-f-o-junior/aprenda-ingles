@@ -22,7 +22,7 @@
         { "id": "1-16", "portugues": "Com licença", "english": "Excuse me", "audio": "../audio/module-01/excuse-me.mp3", "hint": "" },
         { "id": "1-17", "portugues": "Agora mesmo", "english": "Right now", "audio": "../audio/module-01/right-now.mp3", "hint": "" },
         { "id": "1-18", "portugues": "Claro/Com certeza", "english": "Of course", "audio": "../audio/module-01/of-course.mp3", "hint": "" },
-        { "id": "1-19", "portugues": "Acorde", "english": "Wake up", "audio": "../audio/module-01/wake-up.mp3", "hint": "" },
+        { "id": "1-19", "portugues": "Acorde", "english": "Wake up", "audio": "../audio/module-01/wake-up.mp3", "hint": "..." },
         { "id": "1-20", "portugues": "Vá devagar", "english": "Slow down", "audio": "../audio/module-01/slow-down.mp3", "hint": "" }
       ]
     },

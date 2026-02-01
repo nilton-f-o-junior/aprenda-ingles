@@ -96,6 +96,27 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.module-title {
+  color: var(--text-color-pri);
+  font-weight: bold;
+  margin: 24px 0px 16px 0px;
+}
+
+.lesson-item {
+  color: var(--text-color-sec);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.lesson-item.active {
+  color: var(--text-color-pri);
+  font-weight: bold;
+}
+
+.lesson-item.completed {
+  opacity: 0.8;
+}
+
 main {
   display: flex;
   justify-content: center;
