@@ -53,7 +53,7 @@ class LanguageLearning {
 
     async loadLessons() {
         try {
-            const possiblePaths = ['../assets/data/module-01.json'];
+            const possiblePaths = ['/src/assets/data/vocabulary.json'];
             let response;
 
             for (const path of possiblePaths) {
