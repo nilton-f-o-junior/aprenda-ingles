@@ -1,20 +1,20 @@
 body {
-  background-color: var(--bg-color-sec);
-  margin: 2rem;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 4rem);
+  margin: 2rem;
   border-radius: 8px;
+  padding: 2rem;
+  background-color: var(--bg-secondary);
 }
 
 header {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1rem;
-  position: relative;
-  z-index: 100;
 }
 
 .github-icon a {
@@ -24,63 +24,65 @@ header {
   transition: transform 0.3s ease;
 }
 
-.github-icon a:hover { transform: scale(1.1); }
+.github-icon a:hover {
+  transform: scale(1.1);
+}
 
 .github-icon a:focus {
-  outline: 2px solid var(--bg-color-pri);
-  outline-offset: 4px;
   border-radius: 50%;
+  outline: 2px solid var(--bg-primary);
+  outline-offset: 4px;
 }
 
 main {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 
 .button-group {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   gap: 42px;
 }
 
 .vocabulary-button {
-  font-family: var(--font-mono);
-  color: var(--text-color-pri);
-  font-size: var(--font-size-desktop);
   width: 266px;
   height: 64px;
   border: none;
-  background: radial-gradient(circle at right, transparent 14px, var(--color-blue) 10px); 
+  font-family: var(--font-main);
+  font-size: var(--font-size-desktop);
+  color: var(--text-primary);
+  background: radial-gradient(circle at right, transparent 14px, var(--color-blue) 10px);
 }
 
 .expressions-button {
-  font-family: var(--font-mono);
-  color: var(--text-color-pri);
-  font-size: 24px;
-  background-color: var(--color-blue);
+  position: relative;
   width: 266px;
   height: 64px;
-  position: relative;
   margin-left: 20px;
-  border:none;
+  border: none;
+  font-family: var(--font-main);
+  font-size: 24px;
+  color: var(--text-primary);
+  background-color: var(--color-blue);
 }
 
 .expressions-button::before {
-  content: "";
   position: absolute;
   left: -15px;
   top: 50%;
-  transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  background-color: var(--color-blue);
   border-radius: 50%;
+  background-color: var(--color-blue);
+  transform: translateY(-50%);
+  content: "";
 }
 
-.vocabulary-button:hover{
+.vocabulary-button:hover {
   background: radial-gradient(circle at right, transparent 14px, var(--color-yellow) 14px);
 }
 
@@ -106,33 +108,35 @@ main {
 
 @media (max-width: 768px) {
   body {
+    min-height: calc(100vh - 2rem);
     margin: 1rem;
     padding: 1.5rem;
-    min-height: calc(100vh - 2rem);
   }
 
   .button-group {
+    display: flex;
     flex-direction: column;
-    gap: 24px;
     align-items: center;
+    gap: 24px;
   }
 
   .vocabulary-button {
-    font-size: var(--font-size-mobile);
     width: 247px;
     height: 56px;
-    background: radial-gradient(circle at right, transparent 9px, var(--color-blue) 9px);   }
+    font-size: var(--font-size-mobile);
+    background: radial-gradient(circle at right, transparent 9px, var(--color-blue) 9px);
+  }
 
   .expressions-button {
-    font-size: var(--font-size-mobile);
     width: 247px;
     height: 56px;
     margin-left: 0;
+    font-size: var(--font-size-mobile);
   }
 
   .expressions-button::before {
     left: -10px;
     width: 20px;
     height: 20px;
-  }  
+  }
 } 

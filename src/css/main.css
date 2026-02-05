@@ -1,8 +1,4 @@
 /*
-  Configuração Global do CSS
-*/
-
-/*
   Colors provided by Catppuccin (https://github.com/catppuccin/catppuccin)
   License: MIT
   Copyright (c) 2021 Catppuccin
@@ -10,36 +6,77 @@
 
 :root {
 
-  /* Fontes */
-  --font-mono: 'JetBrains Mono', monospace;
+  /* 1. colors  */
+  --black: #000000;
+  --white: #ffffff;
+
+  --gray: #5d5d5d;
+  --gray-medium: #b2b2b2;
+  --gray-light: #F3F3F3;
+  
+  --blue: #89b4fa;
+  --blue-light: #D9E7FD;
+  
+  --green: #a6e3a1;
+  --green-light: #CDEFCA;
+
+  --yellow: #fdd989;
+  --yellow-light: #fef3d9;  
+
+  --maroon: #eba0ac;  
+
+  --red: #f38ba8;
+  --red-light: #fae8eb;
+    
+  --peach: #fab387;
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;  
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --lavender: #b4befe;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+  
+  /* 2. tokens */
+  --bg-primary: var(--blue);
+  --bg-secondary: var(--white);
+  
+  --text-primary: var(--white);
+  --text-secondary: var(--black);
+  --text-tertiary: var(--gray);
+  --text-quaternary: var(--gray-medium);
+
+  --color-blue: var(--blue);
+  --color-gray: var(--gray);
+  --color-green: var(--green);
+  --color-orange: var(--peach);
+  --color-red: var(--maroon);
+  --color-white: var(--white);
+  --color-yellow: var(--yellow);
+  
+  --color-light-blue: var(--blue-light);
+  --color-light-gray: var(--gray-light);    
+  --color-light-yellow: var(--yellow-light);
+  --color-light-green: var(--green-light);
+  --color-light-red: var(--red-light);    
+
+  /* 3. typography */
+  --font-main: 'JetBrains Mono', monospace;
   --font-size-desktop: 24px;
   --font-size-mobile: 16px;
-  
-  /* Cores de fundo */
-  --bg-color-pri: #89B4FA;
-  --bg-color-sec: #FFF;
-  
-  /* Cores de texto */
-  --text-color-pri: #FFF;
-  --text-color-sec: #000;
-  --text-color-tec: #5D5D5D;
-  --text-color-qua: #B2B2B2;
-  
-  /* Cores principais */
-  --color-blue: #89B4FA;
-  --color-gray: #5D5D5D;
-  --color-green: #A6E3A1;
-  --color-orange: #FAB387;
-  --color-red: #EBA0AC;
-  --color-white: #FFF;
-  --color-yellow: #FDD989;
-  
-  /* Cores claras */
-  --color-light-blue: #D9E7FD;
-  --color-light-gray: #F3F3F3;
-  --color-light-yellow: #FEF3D9;
-  --color-light-green: #CDEFCA;
-  --color-light-red: #FAE8EB;
 }
 
 * {

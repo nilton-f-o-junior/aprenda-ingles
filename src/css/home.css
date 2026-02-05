@@ -1,22 +1,22 @@
 body {
-  font-family: var(--font-mono);
-  color: var(--text-color-tec);  
-  background-color: var(--bg-color-sec);
-  margin: 2rem;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 4rem);
-  border-radius: 8px;  
+  margin: 2rem;
+  border-radius: 8px;
+  padding: 2rem;
+  font-family: var(--font-main);
+  color: var(--text-tertiary);
+  background-color: var(--bg-secondary);
 }
 
 header {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1rem;
-  position: relative;
-  z-index: 100;
 }
 
 .github-icon a {
@@ -26,85 +26,82 @@ header {
   transition: transform 0.3s ease;
 }
 
-.github-icon a:hover { transform: scale(1.1); }
+.github-icon a:hover {
+  transform: scale(1.1);
+}
 
 .github-icon a:focus {
-  outline: 2px solid var(--bg-color-pri);
-  outline-offset: 4px;
   border-radius: 50%;
+  outline: 2px solid var(--bg-primary);
+  outline-offset: 4px;
 }
 
 main {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .button-group {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative; 
 }
 
 .start-button {
-  background: var(--color-blue);
-  color: var(--text-color-pri);
-  border: none;
-  padding: 16px 32px;
-  font-size: var(--font-size-desktop);
-  font-weight: 400;
-  font-family: var(--font-mono);
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
   width: 266px;
   height: 64px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  font-size: var(--font-size-desktop);
+  font-weight: 400;
   line-height: 32px;
+  color: var(--text-primary);
+  background: var(--color-blue);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .divider-button {
   width: 0px;
   height: 50px;
-  border-left: 3px dashed var(--color-blue);    
+  border-left: 3px dashed var(--color-blue);
 }
 
 .play-button {
-  background: var(--color-blue);
-  border: none;
-  width: 72px;
-  height: 64px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  width: 72px;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-blue);
+  cursor: pointer;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .play-button svg {
   width: 54px;
   height: 54px;
-  fill: var(--color-white);
   margin-left: 2px;
-  stroke: var(--color-white);
   stroke-width: 4;
-  stroke-linejoin: round;  
+  stroke-linejoin: round;
+  fill: var(--color-white);
+  stroke: var(--color-white);
 }
 
 .button-group:hover {
-  gap: 0; 
-}
-
-.play-button {
-  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 0; 
+  gap: 0;
 }
 
 .button-group:hover .play-button {
-  margin-left: 8px; 
+  margin-left: 8px;
   background: var(--color-yellow);
   transform: rotate(5deg);
 }
@@ -115,42 +112,42 @@ main {
 }
 
 footer {
-  text-align: center;
   padding-top: 1rem;
   font-size: 14px;
+  text-align: center;
   color: var(--text-color-box-sec);
 }
 
 @media (max-width: 768px) {
   body {
+    min-height: calc(100vh - 2rem);
     margin: 1rem;
     padding: 1.5rem;
-    min-height: calc(100vh - 2rem);
   }
-  
+
   .start-button {
-    padding: 12px 24px;
-    font-size: var(--font-size-mobile);
     width: 200px;
     height: 52px;
+    padding: 12px 24px;
+    font-size: var(--font-size-mobile);
     line-height: 24px;
   }
-  
+
   .divider-button {
     height: 40px;
   }
-  
+
   .play-button {
     width: 52px;
     height: 52px;
   }
-  
+
   .play-button svg {
-    width: 36px;  
+    width: 36px;
     height: 36px;
     stroke-width: 3;
   }
-    
+
   footer {
     font-size: 12px;
   }
