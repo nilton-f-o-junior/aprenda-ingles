@@ -1,13 +1,19 @@
-const REPO_NAME = 'aprenda-ingles';
-
-const basePath = REPO_NAME ? `/${REPO_NAME}/` : '/';
-
 /* index.html */
 
 const startButton = document.querySelector('.start-button');
 const dividerButton = document.querySelector('.divider-button');
 const playButton = document.querySelector('.play-button');
 
+// Obtém o caminho base do repositório automaticamente
+const getBasePath = () => {
+  const path = window.location.pathname;
+  const pathArray = path.split('/').filter(Boolean);
+  // Se estiver em github.io/repo-name/, retorna /repo-name/
+  // Se estiver em domínio customizado, retorna /
+  return pathArray.length > 0 && !path.endsWith('.html') ? `/${pathArray[0]}/` : '/';
+};
+
+const basePath = getBasePath();
 const categoriesUrl = `${basePath}src/pages/categories.html`;
 
 if (startButton && dividerButton && playButton) {
