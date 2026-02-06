@@ -130,10 +130,10 @@ main {
 }
 
 h2 {
+  display: flex;
   width: 100%;
   max-width: 800px;
   margin: 32px 0px;
-  display: flex;
   align-items: flex-start;
   color: var(--text-quaternary);
 }
@@ -147,6 +147,8 @@ h2 {
 }
 
 .play-button {
+  line-height: 0;
+  font-size: 0;
   border: none;
 }
 
@@ -167,7 +169,7 @@ h2 {
 
 .original-text {
   margin: 0;
-  padding: 20px 24px;
+  padding: 22px 24px;
   font-size: 1rem;
   color: var(--text-secondary);
   background-color: var(--color-light-blue);
@@ -177,7 +179,7 @@ h2 {
   display: block;
   width: 100%;
   margin: 0;
-  padding: 24px 20px;
+  padding: 22px 20px;
   border: none;
   outline: none;
   font-family: var(--font-main);
@@ -255,4 +257,45 @@ h3 {
   width: 100%;
   max-width: 800px;  
   align-items: flex-start;
+}
+
+@media (max-width: 480px) {
+
+  .card-translate {
+    flex-wrap: wrap;
+    align-items: stretch; 
+  }
+
+  .audio-section {
+    line-height: 0;
+    font-size: 0;
+  }
+
+  .input-section {
+    display: contents; 
+  }
+
+  .original-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 128px;
+    min-height: 64px;    
+  }
+
+  .translation-input {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .controls {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 411px) {
+
+  .controls {
+    gap: 8px;
+  }  
 }
