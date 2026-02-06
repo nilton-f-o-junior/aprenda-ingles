@@ -4,7 +4,7 @@ const startButton = document.querySelector('.start-button');
 const dividerButton = document.querySelector('.divider-button');
 const playButton = document.querySelector('.play-button');
 
-const categoriesUrl = 'src/pages/categories.html';
+const categoriesUrl = './src/pages/categories.html';
 
 if (startButton && dividerButton && playButton) {
   startButton.addEventListener('click', () => {
