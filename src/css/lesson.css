@@ -211,10 +211,14 @@ h2 {
   width: 100%;
   max-width: 800px;
   height: 64px;
-  margin: 32px 0px;
+  margin: 32px 0px 0px 0px;
   border-radius: 4px;
   overflow: hidden;
   background-color: var(--color-light-yellow);
+}
+
+.play-hint {
+   border: none;
 }
 
 .hint-section {
@@ -232,10 +236,23 @@ h2 {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 32px;
   gap: 12px;
   color: var(--text-quaternary);
+}
+
+h3 {
+  width: 100%;
+  max-width: 800px;  
+  align-items: flex-start;
+  
+}
+
+.instruction-text {
+  width: 100%;
+  max-width: 800px;  
+  align-items: flex-start;
 }
