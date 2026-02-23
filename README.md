@@ -6,7 +6,7 @@
 
 <p align="center">
   <a>
-    <img src="https://img.shields.io/badge/Atualização-29%2F03%2F26-04a5e5" alt="Próxima Atualização">
+    <img src="https://img.shields.io/badge/Atualização-31%2F03%2F26-04a5e5" alt="Próxima Atualização">
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/Licença-MIT-yellow.svg" alt="Licença">
