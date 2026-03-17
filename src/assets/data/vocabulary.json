@@ -9,7 +9,7 @@
         { "id": "1-3", "portugues": "Sem problema", "english": "No problem", "audio": "/src/assets/audio/vocabulary/module-01/no-problem.mp3", "hint": "No = Não/Sem" },
         { "id": "1-4", "portugues": "Vamos", "english": "Let's go", "audio": "/src/assets/audio/vocabulary/module-01/lets-go.mp3", "hint": "Let's = Vamos" },
         { "id": "1-5", "portugues": "Até logo", "english": "See you", "audio": "/src/assets/audio/vocabulary/module-01/see-you.mp3", "hint": "See = Vejo (Te vejo)" },
-        { "id": "1-6", "portugues": "Se cuide", "english": "Take care", "audio": "/src/assets/audio/vocabulary/module-01/take-care.mp3", "hint": "Take = Tomar (Cuidado)" },
+        { "id": "1-6", "portugues": "Se cuida", "english": "Take care", "audio": "/src/assets/audio/vocabulary/module-01/take-care.mp3", "hint": "Take = Tomar (Cuidado)" },
         { "id": "1-7", "portugues": "Bom trabalho", "english": "Nice work", "audio": "/src/assets/audio/vocabulary/module-01/nice-work.mp3", "hint": "Nice = Bom/Legal" },
         { "id": "1-8", "portugues": "Muito bem", "english": "Well done", "audio": "/src/assets/audio/vocabulary/module-01/well-done.mp3", "hint": "Well = Bem" },
         { "id": "1-9", "portugues": "Venha aqui", "english": "Come here", "audio": "/src/assets/audio/vocabulary/module-01/come-here.mp3", "hint": "Come = Venha" },
