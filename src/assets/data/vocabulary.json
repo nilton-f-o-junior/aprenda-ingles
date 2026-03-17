@@ -12,7 +12,7 @@
         { "id": "1-6", "portugues": "Se cuida", "english": "Take care", "audio": "/src/assets/audio/vocabulary/module-01/take-care.mp3", "hint": "Care = Cuidado (Fique bem)" },
         { "id": "1-7", "portugues": "Bom trabalho", "english": "Nice work", "audio": "/src/assets/audio/vocabulary/module-01/nice-work.mp3", "hint": "Nice = Bom/Legal" },
         { "id": "1-8", "portugues": "Muito bem", "english": "Well done", "audio": "/src/assets/audio/vocabulary/module-01/well-done.mp3", "hint": "Well = Bem" },
-        { "id": "1-9", "portugues": "Venha aqui", "english": "Come here", "audio": "/src/assets/audio/vocabulary/module-01/come-here.mp3", "hint": "Come = Venha" },
+        { "id": "1-9", "portugues": "Vem aqui", "english": "Come here", "audio": "/src/assets/audio/vocabulary/module-01/come-here.mp3", "hint": "Come = Venha" },
         { "id": "1-10", "portugues": "Mantenha a calma", "english": "Stay calm", "audio": "/src/assets/audio/vocabulary/module-01/stay-calm.mp3", "hint": "Stay = Fique" },
         { "id": "1-11", "portugues": "Siga em frente", "english": "Move forward", "audio": "/src/assets/audio/vocabulary/module-01/move-forward.mp3", "hint": "Move = Mova/Siga" },
         { "id": "1-12", "portugues": "Continue", "english": "Keep going", "audio": "/src/assets/audio/vocabulary/module-01/keep-going.mp3", "hint": "Keep = Continue/Manter" },
