@@ -4,128 +4,730 @@
       "id": 1,
       "title": "Módulo 1",
       "lessons": [
-        { "id": "1-1", "portugues": "Bom dia", "english": "Good morning", "audio": "/src/assets/audio/vocabulary/module-01/good-morning.mp3", "hint": "Good = Bom" },
-        { "id": "1-2", "portugues": "Obrigado", "english": "Thank you", "audio": "/src/assets/audio/vocabulary/module-01/thank-you.mp3", "hint": "Thank = Agradecer" },
-        { "id": "1-3", "portugues": "Sem problema", "english": "No problem", "audio": "/src/assets/audio/vocabulary/module-01/no-problem.mp3", "hint": "No = Não/Sem" },
-        { "id": "1-4", "portugues": "Vamos", "english": "Let's go", "audio": "/src/assets/audio/vocabulary/module-01/lets-go.mp3", "hint": "Let's = Vamos" },
-        { "id": "1-5", "portugues": "Até logo", "english": "See you", "audio": "/src/assets/audio/vocabulary/module-01/see-you.mp3", "hint": "See = Vejo (Te vejo)" },
-        { "id": "1-6", "portugues": "Se cuida", "english": "Take care", "audio": "/src/assets/audio/vocabulary/module-01/take-care.mp3", "hint": "Care = Cuidado (Fique bem)" },
-        { "id": "1-7", "portugues": "Bom trabalho", "english": "Nice work", "audio": "/src/assets/audio/vocabulary/module-01/nice-work.mp3", "hint": "Nice = Bom/Legal" },
-        { "id": "1-8", "portugues": "Muito bem", "english": "Well done", "audio": "/src/assets/audio/vocabulary/module-01/well-done.mp3", "hint": "Well = Bem" },
-        { "id": "1-9", "portugues": "Vem aqui", "english": "Come here", "audio": "/src/assets/audio/vocabulary/module-01/come-here.mp3", "hint": "Come = Venha" },
-        { "id": "1-10", "portugues": "Tenha calma", "english": "Stay calm", "audio": "/src/assets/audio/vocabulary/module-01/stay-calm.mp3", "hint": "Stay = Fique (Manter)" },
-        { "id": "1-11", "portugues": "Siga em frente", "english": "Move forward", "audio": "/src/assets/audio/vocabulary/module-01/move-forward.mp3", "hint": "Move = Mova/Siga" },
-        { "id": "1-12", "portugues": "Continue", "english": "Keep going", "audio": "/src/assets/audio/vocabulary/module-01/keep-going.mp3", "hint": "Keep = Continue/Manter" },
-        { "id": "1-13", "portugues": "Confie em mim", "english": "Trust me", "audio": "/src/assets/audio/vocabulary/module-01/trust-me.mp3", "hint": "Trust = Confie" },
-        { "id": "1-14", "portugues": "Deixa pra lá", "english": "Never mind", "audio": "/src/assets/audio/vocabulary/module-01/never-mind.mp3", "hint": "Never = Nunca" },
-        { "id": "1-15", "portugues": "Espere um pouco", "english": "Hold on", "audio": "/src/assets/audio/vocabulary/module-01/hold-on.mp3", "hint": "Hold = Aguarde" },
-        { "id": "1-16", "portugues": "Com licença", "english": "Excuse me", "audio": "/src/assets/audio/vocabulary/module-01/excuse-me.mp3", "hint": "Excuse = Licença" },
-        { "id": "1-17", "portugues": "Agora mesmo", "english": "Right now", "audio": "/src/assets/audio/vocabulary/module-01/right-now.mp3", "hint": "Right = Agora" },
-        { "id": "1-18", "portugues": "Claro", "english": "Of course", "audio": "/src/assets/vocabulary/audio/module-01/of-course.mp3", "hint": "Of = De (Claro)" },
-        { "id": "1-19", "portugues": "Acorda", "english": "Wake up", "audio": "/src/assets/audio/vocabulary/module-01/wake-up.mp3", "hint": "Wake = Acorde" },
-        { "id": "1-20", "portugues": "Vá devagar", "english": "Slow down", "audio": "/src/assets/audio/vocabulary/module-01/slow-down.mp3", "hint": "Slow = Devagar" }
+        {
+          "id": "1-1",
+          "portugues": "comida",
+          "english": "food",
+          "audio": "/src/assets/audio/vocabulary/module-01/food.mp3",
+          "hint": "Food = Comida"
+        },
+        {
+          "id": "1-2",
+          "portugues": "arroz",
+          "english": "rice",
+          "audio": "/src/assets/audio/vocabulary/module-01/rice.mp3",
+          "hint": "Rice = Arroz"
+        },
+        {
+          "id": "1-3",
+          "portugues": "feijão",
+          "english": "beans",
+          "audio": "/src/assets/audio/vocabulary/module-01/beans.mp3",
+          "hint": "Beans = Feijão"
+        },
+        {
+          "id": "1-4",
+          "portugues": "pão",
+          "english": "bread",
+          "audio": "/src/assets/audio/vocabulary/module-01/bread.mp3",
+          "hint": "Bread = Pão"
+        },
+        {
+          "id": "1-5",
+          "portugues": "água",
+          "english": "water",
+          "audio": "/src/assets/audio/vocabulary/module-01/water.mp3",
+          "hint": "Water = Água"
+        },
+        {
+          "id": "1-6",
+          "portugues": "leite",
+          "english": "milk",
+          "audio": "/src/assets/audio/vocabulary/module-01/milk.mp3",
+          "hint": "Milk = Leite"
+        },
+        {
+          "id": "1-7",
+          "portugues": "café",
+          "english": "coffee",
+          "audio": "/src/assets/audio/vocabulary/module-01/coffee.mp3",
+          "hint": "Coffee = Café"
+        },
+        {
+          "id": "1-8",
+          "portugues": "chá",
+          "english": "tea",
+          "audio": "/src/assets/audio/vocabulary/module-01/tea.mp3",
+          "hint": "Tea = Chá"
+        },
+        {
+          "id": "1-9",
+          "portugues": "carne",
+          "english": "meat",
+          "audio": "/src/assets/audio/vocabulary/module-01/meat.mp3",
+          "hint": "Meat = Carne"
+        },
+        {
+          "id": "1-10",
+          "portugues": "frango",
+          "english": "chicken",
+          "audio": "/src/assets/audio/vocabulary/module-01/chicken.mp3",
+          "hint": "Chicken = Frango"
+        },
+        {
+          "id": "1-11",
+          "portugues": "peixe",
+          "english": "fish",
+          "audio": "/src/assets/audio/vocabulary/module-01/fish.mp3",
+          "hint": "Fish = Peixe"
+        },
+        {
+          "id": "1-12",
+          "portugues": "ovo",
+          "english": "egg",
+          "audio": "/src/assets/audio/vocabulary/module-01/egg.mp3",
+          "hint": "Egg = Ovo"
+        },
+        {
+          "id": "1-13",
+          "portugues": "queijo",
+          "english": "cheese",
+          "audio": "/src/assets/audio/vocabulary/module-01/cheese.mp3",
+          "hint": "Cheese = Queijo"
+        },
+        {
+          "id": "1-14",
+          "portugues": "fruta",
+          "english": "fruit",
+          "audio": "/src/assets/audio/vocabulary/module-01/fruit.mp3",
+          "hint": "Fruit = Fruta"
+        },
+        {
+          "id": "1-15",
+          "portugues": "maçã",
+          "english": "apple",
+          "audio": "/src/assets/audio/vocabulary/module-01/apple.mp3",
+          "hint": "Apple = Maçã"
+        },
+        {
+          "id": "1-16",
+          "portugues": "banana",
+          "english": "banana",
+          "audio": "/src/assets/audio/vocabulary/module-01/banana.mp3",
+          "hint": "Banana = Banana"
+        },
+        {
+          "id": "1-17",
+          "portugues": "salada",
+          "english": "salad",
+          "audio": "/src/assets/audio/vocabulary/module-01/salad.mp3",
+          "hint": "Salad = Salada"
+        },
+        {
+          "id": "1-18",
+          "portugues": "açúcar",
+          "english": "sugar",
+          "audio": "/src/assets/audio/vocabulary/module-01/sugar.mp3",
+          "hint": "Sugar = Açúcar"
+        },
+        {
+          "id": "1-19",
+          "portugues": "sal",
+          "english": "salt",
+          "audio": "/src/assets/audio/vocabulary/module-01/salt.mp3",
+          "hint": "Salt = Sal"
+        },
+        {
+          "id": "1-20",
+          "portugues": "manteiga",
+          "english": "butter",
+          "audio": "/src/assets/audio/vocabulary/module-01/butter.mp3",
+          "hint": "Butter = Manteiga"
+        }
       ]
     },
     {
       "id": 2,
       "title": "Módulo 2",
       "lessons": [
-        { "id": "2-3", "portugues": "Levante-se", "english": "Stand up", "audio": "/src/assets/audio/vocabulary/module-02/stand-up.mp3", "hint": "Stand = Levante/Fique de pé" },
-        { "id": "2-4", "portugues": "Acalme-se", "english": "Calm down", "audio": "/src/assets/audio/vocabulary/module-02/calm-down.mp3", "hint": "Calm = Calma" },
-        { "id": "2-5", "portugues": "Cuidado", "english": "Watch out", "audio": "/src/assets/audio/vocabulary/module-02/watch-out.mp3", "hint": "Watch = Observe/Cuidado" },
-        { "id": "2-6", "portugues": "Atenção", "english": "Look out", "audio": "/src/assets/audio/vocabulary/module-02/look-out.mp3", "hint": "Look = Olhe/Atenção" },
-        { "id": "2-7", "portugues": "Fale mais alto", "english": "Speak up", "audio": "/src/assets/audio/vocabulary/module-02/speak-up.mp3", "hint": "Speak = Fale" },
-        { "id": "2-8", "portugues": "Cale-se", "english": "Shut up", "audio": "/src/assets/audio/vocabulary/module-02/shut-up.mp3", "hint": "Shut = Feche/Cale" },
-        { "id": "2-9", "portugues": "Anime-se", "english": "Cheer up", "audio": "/src/assets/audio/vocabulary/module-02/cheer-up.mp3", "hint": "Cheer = Alegrar/Animar" },
-        { "id": "2-10", "portugues": "Desista", "english": "Give up", "audio": "/src/assets/audio/vocabulary/module-02/give-up.mp3", "hint": "Give = Entregar/Dar" },
-        { "id": "2-11", "portugues": "Aguarde", "english": "Hang on", "audio": "/src/assets/audio/vocabulary/module-02/hang-on.mp3", "hint": "Hang = Espere/Aguente" },
-        { "id": "2-12", "portugues": "Vá em frente", "english": "Go ahead", "audio": "/src/assets/audio/vocabulary/module-02/go-ahead.mp3", "hint": "Go = Vá" },
-        { "id": "2-13", "portugues": "Vamos lá", "english": "Come on", "audio": "/src/assets/audio/vocabulary/module-02/come-on.mp3", "hint": "Come = Venha" },
-        { "id": "2-14", "portugues": "Siga em frente", "english": "Move on", "audio": "/src/assets/audio/vocabulary/module-02/move-on.mp3", "hint": "Move = Mover/Seguir" },
-        { "id": "2-15", "portugues": "Afaste-se", "english": "Back off", "audio": "/src/assets/audio/vocabulary/module-02/back-off.mp3", "hint": "Back = Trás/Recuar" },
-        { "id": "2-16", "portugues": "Dê um passo atrás", "english": "Step back", "audio": "/src/assets/audio/vocabulary/module-02/step-back.mp3", "hint": "Step = Passo" },
-        { "id": "2-17", "portugues": "Olhe aqui", "english": "Look here", "audio": "/src/assets/audio/vocabulary/module-02/look-here.mp3", "hint": "Look = Olhe" },
-        { "id": "2-18", "portugues": "Prestem atenção", "english": "Listen up", "audio": "/src/assets/audio/vocabulary/module-02/listen-up.mp3", "hint": "Listen = Ouça" },
-        { "id": "2-19", "portugues": "Continue", "english": "Carry on", "audio": "/src/assets/audio/vocabulary/module-02/carry-on.mp3", "hint": "Carry = Carregar/Continuar" },
-        { "id": "2-20", "portugues": "Vire-se", "english": "Turn around", "audio": "/src/assets/audio/vocabulary/module-02/turn-around.mp3", "hint": "Turn = Virar" }
+        {
+          "id": "2-1",
+          "portugues": "banheiro",
+          "english": "bathroom",
+          "audio": "/src/assets/audio/vocabulary/module-02/bathroom.mp3",
+          "hint": "Bathroom = Banheiro"
+        },
+        {
+          "id": "2-2",
+          "portugues": "toalha",
+          "english": "towel",
+          "audio": "/src/assets/audio/vocabulary/module-02/towel.mp3",
+          "hint": "Towel = Toalha"
+        },
+        {
+          "id": "2-3",
+          "portugues": "sabonete",
+          "english": "soap",
+          "audio": "/src/assets/audio/vocabulary/module-02/soap.mp3",
+          "hint": "Soap = Sabonete"
+        },
+        {
+          "id": "2-4",
+          "portugues": "xampu",
+          "english": "shampoo",
+          "audio": "/src/assets/audio/vocabulary/module-02/shampoo.mp3",
+          "hint": "Shampoo = Xampu"
+        },
+        {
+          "id": "2-5",
+          "portugues": "escova de dentes",
+          "english": "toothbrush",
+          "audio": "/src/assets/audio/vocabulary/module-02/toothbrush.mp3",
+          "hint": "Toothbrush = Escova de dentes"
+        },
+        {
+          "id": "2-6",
+          "portugues": "pasta de dentes",
+          "english": "toothpaste",
+          "audio": "/src/assets/audio/vocabulary/module-02/toothpaste.mp3",
+          "hint": "Toothpaste = Pasta de dentes"
+        },
+        {
+          "id": "2-7",
+          "portugues": "espelho",
+          "english": "mirror",
+          "audio": "/src/assets/audio/vocabulary/module-02/mirror.mp3",
+          "hint": "Mirror = Espelho"
+        },
+        {
+          "id": "2-8",
+          "portugues": "chuveiro",
+          "english": "shower",
+          "audio": "/src/assets/audio/vocabulary/module-02/shower.mp3",
+          "hint": "Shower = Chuveiro"
+        },
+        {
+          "id": "2-9",
+          "portugues": "vaso sanitário",
+          "english": "toilet",
+          "audio": "/src/assets/audio/vocabulary/module-02/toilet.mp3",
+          "hint": "Toilet = Vaso sanitário"
+        },
+        {
+          "id": "2-10",
+          "portugues": "papel higiênico",
+          "english": "toilet paper",
+          "audio": "/src/assets/audio/vocabulary/module-02/toilet-paper.mp3",
+          "hint": "Toilet paper = Papel higiênico"
+        },
+        {
+          "id": "2-11",
+          "portugues": "torneira",
+          "english": "faucet",
+          "audio": "/src/assets/audio/vocabulary/module-02/faucet.mp3",
+          "hint": "Faucet = Torneira"
+        },
+        {
+          "id": "2-12",
+          "portugues": "pia",
+          "english": "sink",
+          "audio": "/src/assets/audio/vocabulary/module-02/sink.mp3",
+          "hint": "Sink = Pia"
+        },
+        {
+          "id": "2-13",
+          "portugues": "fio dental",
+          "english": "dental floss",
+          "audio": "/src/assets/audio/vocabulary/module-02/dental-floss.mp3",
+          "hint": "Dental floss = Fio dental"
+        },
+        {
+          "id": "2-14",
+          "portugues": "pente",
+          "english": "comb",
+          "audio": "/src/assets/audio/vocabulary/module-02/comb.mp3",
+          "hint": "Comb = Pente"
+        },
+        {
+          "id": "2-15",
+          "portugues": "escova de cabelo",
+          "english": "hairbrush",
+          "audio": "/src/assets/audio/vocabulary/module-02/hairbrush.mp3",
+          "hint": "Hairbrush = Escova de cabelo"
+        },
+        {
+          "id": "2-16",
+          "portugues": "desodorante",
+          "english": "deodorant",
+          "audio": "/src/assets/audio/vocabulary/module-02/deodorant.mp3",
+          "hint": "Deodorant = Desodorante"
+        },
+        {
+          "id": "2-17",
+          "portugues": "banheira",
+          "english": "bathtub",
+          "audio": "/src/assets/audio/vocabulary/module-02/bathtub.mp3",
+          "hint": "Bathtub = Banheira"
+        },
+        {
+          "id": "2-18",
+          "portugues": "tapete de banheiro",
+          "english": "bath mat",
+          "audio": "/src/assets/audio/vocabulary/module-02/bath-mat.mp3",
+          "hint": "Bath mat = Tapete de banheiro"
+        },
+        {
+          "id": "2-19",
+          "portugues": "esponja",
+          "english": "sponge",
+          "audio": "/src/assets/audio/vocabulary/module-02/sponge.mp3",
+          "hint": "Sponge = Esponja"
+        },
+        {
+          "id": "2-20",
+          "portugues": "lixeira",
+          "english": "trash can",
+          "audio": "/src/assets/audio/vocabulary/module-02/trash-can.mp3",
+          "hint": "Trash can = Lixeira"
+        }
       ]
     },
     {
       "id": 3,
       "title": "Módulo 3",
       "lessons": [
-        { "id": "3-1", "portugues": "Boa noite", "english": "Good night", "audio": "/src/assets/audio/vocabulary/module-03/good-night.mp3", "hint": "Good = Boa" },
-        { "id": "3-2", "portugues": "Boa sorte", "english": "Good luck", "audio": "/src/assets/audio/vocabulary/module-03/good-luck.mp3", "hint": "Good = Boa" },
-        { "id": "3-3", "portugues": "Bons sonhos", "english": "Sweet dreams", "audio": "/src/assets/audio/vocabulary/module-03/sweet-dreams.mp3", "hint": "Sweet = Doces" },
-        { "id": "3-4", "portugues": "Bem-vindo de volta", "english": "Welcome back", "audio": "/src/assets/audio/vocabulary/module-03/welcome-back.mp3", "hint": "Welcome = Bem-vindo" },
-        { "id": "3-5", "portugues": "Boa tentativa", "english": "Nice try", "audio": "/src/assets/audio/vocabulary/module-03/nice-try.mp3", "hint": "Nice = Boa/Legal" },
-        { "id": "3-6", "portugues": "Justo/Razoável", "english": "Fair enough", "audio": "/src/assets/audio/vocabulary/module-03/fair-enough.mp3", "hint": "Fair = Justo" },
-        { "id": "3-7", "portugues": "De jeito nenhum", "english": "No way", "audio": "/src/assets/audio/vocabulary/module-03/no-way.mp3", "hint": "No = Não/Nenhum" },
-        { "id": "3-8", "portugues": "Com certeza", "english": "For sure", "audio": "/src/assets/audio/vocabulary/module-03/for-sure.mp3", "hint": "For = Por/Para" },
-        { "id": "3-9", "portugues": "Ainda não", "english": "Not yet", "audio": "/src/assets/audio/vocabulary/module-03/not-yet.mp3", "hint": "Not = Não" },
-        { "id": "3-10", "portugues": "Imediatamente", "english": "Right away", "audio": "/src/assets/audio/vocabulary/module-03/right-away.mp3", "hint": "Right = Direto/Imediato" },
-        { "id": "3-11", "portugues": "Ali/Lá", "english": "Over there", "audio": "/src/assets/audio/vocabulary/module-03/over-there.mp3", "hint": "Over = Lá/Além" },
-        { "id": "3-12", "portugues": "Volte", "english": "Come back", "audio": "/src/assets/audio/vocabulary/module-03/come-back.mp3", "hint": "Come = Venha" },
-        { "id": "3-13", "portugues": "Fique aqui", "english": "Stay here", "audio": "/src/assets/vocabulary/audio/module-03/stay-here.mp3", "hint": "Stay = Fique" },
-        { "id": "3-14", "portugues": "Saia", "english": "Get out", "audio": "/src/assets/audio/vocabulary/module-03/get-out.mp3", "hint": "Get = Sair/Pegar" },
-        { "id": "3-15", "portugues": "Entre", "english": "Come in", "audio": "/src/assets/audio/vocabulary/module-03/come-in.mp3", "hint": "Come = Venha" },
-        { "id": "3-16", "portugues": "Entre", "english": "Step inside", "audio": "/src/assets/audio/vocabulary/module-03/step-inside.mp3", "hint": "Step = Passo/Entrar" },
-        { "id": "3-17", "portugues": "Vá embora", "english": "Go away", "audio": "/src/assets/audio/vocabulary/module-03/go-away.mp3", "hint": "Go = Vá" },
-        { "id": "3-18", "portugues": "Desvie o olhar", "english": "Look away", "audio": "/src/assets/audio/vocabulary/module-03/look-away.mp3", "hint": "Look = Olhe" },
-        { "id": "3-19", "portugues": "Vire à esquerda", "english": "Turn left", "audio": "/src/assets/audio/vocabulary/module-03/turn-left.mp3", "hint": "Turn = Vire" },
-        { "id": "3-20", "portugues": "Vire à direita", "english": "Turn right", "audio": "/src/assets/audio/vocabulary/module-03/turn-right.mp3", "hint": "Turn = Vire" }
+        {
+          "id": "3-1",
+          "portugues": "cozinha",
+          "english": "kitchen",
+          "audio": "/src/assets/audio/vocabulary/module-03/kitchen.mp3",
+          "hint": "Kitchen = Cozinha"
+        },
+        {
+          "id": "3-2",
+          "portugues": "geladeira",
+          "english": "fridge",
+          "audio": "/src/assets/audio/vocabulary/module-03/fridge.mp3",
+          "hint": "Fridge = Geladeira"
+        },
+        {
+          "id": "3-3",
+          "portugues": "fogão",
+          "english": "stove",
+          "audio": "/src/assets/audio/vocabulary/module-03/stove.mp3",
+          "hint": "Stove = Fogão"
+        },
+        {
+          "id": "3-4",
+          "portugues": "forno",
+          "english": "oven",
+          "audio": "/src/assets/audio/vocabulary/module-03/oven.mp3",
+          "hint": "Oven = Forno"
+        },
+        {
+          "id": "3-5",
+          "portugues": "micro-ondas",
+          "english": "microwave",
+          "audio": "/src/assets/audio/vocabulary/module-03/microwave.mp3",
+          "hint": "Microwave = Micro-ondas"
+        },
+        {
+          "id": "3-6",
+          "portugues": "prato",
+          "english": "plate",
+          "audio": "/src/assets/audio/vocabulary/module-03/plate.mp3",
+          "hint": "Plate = Prato"
+        },
+        {
+          "id": "3-7",
+          "portugues": "copo",
+          "english": "glass",
+          "audio": "/src/assets/audio/vocabulary/module-03/glass.mp3",
+          "hint": "Glass = Copo"
+        },
+        {
+          "id": "3-8",
+          "portugues": "xícara",
+          "english": "cup",
+          "audio": "/src/assets/audio/vocabulary/module-03/cup.mp3",
+          "hint": "Cup = Xícara"
+        },
+        {
+          "id": "3-9",
+          "portugues": "garfo",
+          "english": "fork",
+          "audio": "/src/assets/audio/vocabulary/module-03/fork.mp3",
+          "hint": "Fork = Garfo"
+        },
+        {
+          "id": "3-10",
+          "portugues": "faca",
+          "english": "knife",
+          "audio": "/src/assets/audio/vocabulary/module-03/knife.mp3",
+          "hint": "Knife = Faca"
+        },
+        {
+          "id": "3-11",
+          "portugues": "colher",
+          "english": "spoon",
+          "audio": "/src/assets/audio/vocabulary/module-03/spoon.mp3",
+          "hint": "Spoon = Colher"
+        },
+        {
+          "id": "3-12",
+          "portugues": "panela",
+          "english": "pan",
+          "audio": "/src/assets/audio/vocabulary/module-03/pan.mp3",
+          "hint": "Pan = Panela"
+        },
+        {
+          "id": "3-13",
+          "portugues": "frigideira",
+          "english": "frying pan",
+          "audio": "/src/assets/audio/vocabulary/module-03/frying-pan.mp3",
+          "hint": "Frying pan = Frigideira"
+        },
+        {
+          "id": "3-14",
+          "portugues": "tábua de cortar",
+          "english": "cutting board",
+          "audio": "/src/assets/audio/vocabulary/module-03/cutting-board.mp3",
+          "hint": "Cutting board = Tábua de cortar"
+        },
+        {
+          "id": "3-15",
+          "portugues": "armário",
+          "english": "cabinet",
+          "audio": "/src/assets/audio/vocabulary/module-03/cabinet.mp3",
+          "hint": "Cabinet = Armário"
+        },
+        {
+          "id": "3-16",
+          "portugues": "pia",
+          "english": "sink",
+          "audio": "/src/assets/audio/vocabulary/module-03/sink.mp3",
+          "hint": "Sink = Pia"
+        },
+        {
+          "id": "3-17",
+          "portugues": "lixeira",
+          "english": "trash can",
+          "audio": "/src/assets/audio/vocabulary/module-03/trash-can.mp3",
+          "hint": "Trash can = Lixeira"
+        },
+        {
+          "id": "3-18",
+          "portugues": "pano de prato",
+          "english": "dish towel",
+          "audio": "/src/assets/audio/vocabulary/module-03/dish-towel.mp3",
+          "hint": "Dish towel = Pano de prato"
+        },
+        {
+          "id": "3-19",
+          "portugues": "liquidificador",
+          "english": "blender",
+          "audio": "/src/assets/audio/vocabulary/module-03/blender.mp3",
+          "hint": "Blender = Liquidificador"
+        },
+        {
+          "id": "3-20",
+          "portugues": "detergente",
+          "english": "dish soap",
+          "audio": "/src/assets/audio/vocabulary/module-03/dish-soap.mp3",
+          "hint": "Dish soap = Detergente"
+        }
       ]
     },
     {
       "id": 4,
       "title": "Módulo 4",
       "lessons": [
-        { "id": "4-1", "portugues": "Pare com isso", "english": "Stop it", "audio": "/src/assets/audio/vocabulary/module-04/stop-it.mp3", "hint": "Stop = Pare" },
-        { "id": "4-2", "portugues": "Esqueça isso", "english": "Forget it", "audio": "/src/assets/audio/vocabulary/module-04/forget-it.mp3", "hint": "Forget = Esqueça" },
-        { "id": "4-3", "portugues": "Deixe isso", "english": "Drop it", "audio": "/src/assets/audio/vocabulary/module-04/drop-it.mp3", "hint": "Drop = Solte/Deixe" },
-        { "id": "4-4", "portugues": "Pegue isso", "english": "Take it", "audio": "/src/assets/audio/vocabulary/module-04/take-it.mp3", "hint": "Take = Pegue/Leve" },
-        { "id": "4-5", "portugues": "Deixe isso", "english": "Leave it", "audio": "/src/assets/audio/vocabulary/module-04/leave-it.mp3", "hint": "Leave = Deixe/Sair" },
-        { "id": "4-6", "portugues": "Fique quieto/a", "english": "Keep quiet", "audio": "/src/assets/audio/vocabulary/module-04/keep-quiet.mp3", "hint": "Keep = Mantenha/Fique" },
-        { "id": "4-7", "portugues": "Fique seguro/a", "english": "Stay safe", "audio": "/src/assets/audio/vocabulary/module-04/stay-safe.mp3", "hint": "Stay = Fique" },
-        { "id": "4-8", "portugues": "Tenha cuidado", "english": "Be careful", "audio": "/src/assets/audio/vocabulary/module-04/be-careful.mp3", "hint": "Be = Seja/Esteja" },
-        { "id": "4-9", "portugues": "Preste atenção", "english": "Pay attention", "audio": "/src/assets/audio/vocabulary/module-04/pay-attention.mp3", "hint": "Pay = Pague/Preste" },
-        { "id": "4-10", "portugues": "Fazer sentido", "english": "Make sense", "audio": "/src/assets/audio/vocabulary/module-04/make-sense.mp3", "hint": "Make = Fazer" },
-        { "id": "4-11", "portugues": "Parece bom", "english": "Sounds good", "audio": "/src/assets/audio/vocabulary/module-04/sounds-good.mp3", "hint": "Sounds = Soa/Parece" },
-        { "id": "4-12", "portugues": "Parece ótimo", "english": "Looks great", "audio": "/src/assets/audio/vocabulary/module-04/looks-great.mp3", "hint": "Looks = Parece/Olha" },
-        { "id": "4-13", "portugues": "Parece certo", "english": "Feels right", "audio": "/src/assets/audio/vocabulary/module-04/feels-right.mp3", "hint": "Feels = Sente/Parece" },
-        { "id": "4-14", "portugues": "Quem sabe", "english": "Who knows", "audio": "/src/assets/audio/vocabulary/module-04/who-knows.mp3", "hint": "Who = Quem" },
-        { "id": "4-15", "portugues": "Por que não", "english": "Why not", "audio": "/src/assets/audio/vocabulary/module-04/why-not.mp3", "hint": "Why = Por que" },
-        { "id": "4-16", "portugues": "E daí", "english": "So what", "audio": "/src/assets/audio/vocabulary/module-04/so-what.mp3", "hint": "So = Então/E" },
-        { "id": "4-17", "portugues": "Nada mal", "english": "Not bad", "audio": "/src/assets/audio/vocabulary/module-04/not-bad.mp3", "hint": "Not = Não" },
-        { "id": "4-18", "portugues": "Muito bom", "english": "Pretty good", "audio": "/src/assets/audio/vocabulary/module-04/pretty-good.mp3", "hint": "Pretty = Bastante/Muito" },
-        { "id": "4-19", "portugues": "Quase lá", "english": "Almost there", "audio": "/src/assets/audio/vocabulary/module-04/almost-there.mp3", "hint": "Almost = Quase" },
-        { "id": "4-20", "portugues": "Tudo pronto", "english": "All done", "audio": "/src/assets/audio/vocabulary/module-04/all-done.mp3", "hint": "All = Tudo/Todo" }
+        {
+          "id": "4-1",
+          "portugues": "quarto",
+          "english": "bedroom",
+          "audio": "/src/assets/audio/vocabulary/module-04/bedroom.mp3",
+          "hint": "Bedroom = Quarto"
+        },
+        {
+          "id": "4-2",
+          "portugues": "cama",
+          "english": "bed",
+          "audio": "/src/assets/audio/vocabulary/module-04/bed.mp3",
+          "hint": "Bed = Cama"
+        },
+        {
+          "id": "4-3",
+          "portugues": "colchão",
+          "english": "mattress",
+          "audio": "/src/assets/audio/vocabulary/module-04/mattress.mp3",
+          "hint": "Mattress = Colchão"
+        },
+        {
+          "id": "4-4",
+          "portugues": "travesseiro",
+          "english": "pillow",
+          "audio": "/src/assets/audio/vocabulary/module-04/pillow.mp3",
+          "hint": "Pillow = Travesseiro"
+        },
+        {
+          "id": "4-5",
+          "portugues": "fronha",
+          "english": "pillowcase",
+          "audio": "/src/assets/audio/vocabulary/module-04/pillowcase.mp3",
+          "hint": "Pillowcase = Fronha"
+        },
+        {
+          "id": "4-6",
+          "portugues": "lençol",
+          "english": "sheet",
+          "audio": "/src/assets/audio/vocabulary/module-04/sheet.mp3",
+          "hint": "Sheet = Lençol"
+        },
+        {
+          "id": "4-7",
+          "portugues": "cobertor",
+          "english": "blanket",
+          "audio": "/src/assets/audio/vocabulary/module-04/blanket.mp3",
+          "hint": "Blanket = Cobertor"
+        },
+        {
+          "id": "4-8",
+          "portugues": "edredom",
+          "english": "comforter",
+          "audio": "/src/assets/audio/vocabulary/module-04/comforter.mp3",
+          "hint": "Comforter = Edredom"
+        },
+        {
+          "id": "4-9",
+          "portugues": "guarda-roupa",
+          "english": "closet",
+          "audio": "/src/assets/audio/vocabulary/module-04/closet.mp3",
+          "hint": "Closet = Guarda-roupa"
+        },
+        {
+          "id": "4-10",
+          "portugues": "gaveta",
+          "english": "drawer",
+          "audio": "/src/assets/audio/vocabulary/module-04/drawer.mp3",
+          "hint": "Drawer = Gaveta"
+        },
+        {
+          "id": "4-11",
+          "portugues": "mesa de cabeceira",
+          "english": "nightstand",
+          "audio": "/src/assets/audio/vocabulary/module-04/nightstand.mp3",
+          "hint": "Nightstand = Mesa de cabeceira"
+        },
+        {
+          "id": "4-12",
+          "portugues": "abajur",
+          "english": "lamp",
+          "audio": "/src/assets/audio/vocabulary/module-04/lamp.mp3",
+          "hint": "Lamp = Abajur"
+        },
+        {
+          "id": "4-13",
+          "portugues": "cabide",
+          "english": "hanger",
+          "audio": "/src/assets/audio/vocabulary/module-04/hanger.mp3",
+          "hint": "Hanger = Cabide"
+        },
+        {
+          "id": "4-14",
+          "portugues": "espelho",
+          "english": "mirror",
+          "audio": "/src/assets/audio/vocabulary/module-04/mirror.mp3",
+          "hint": "Mirror = Espelho"
+        },
+        {
+          "id": "4-15",
+          "portugues": "tapete",
+          "english": "rug",
+          "audio": "/src/assets/audio/vocabulary/module-04/rug.mp3",
+          "hint": "Rug = Tapete"
+        },
+        {
+          "id": "4-16",
+          "portugues": "cortina",
+          "english": "curtain",
+          "audio": "/src/assets/audio/vocabulary/module-04/curtain.mp3",
+          "hint": "Curtain = Cortina"
+        },
+        {
+          "id": "4-17",
+          "portugues": "janela",
+          "english": "window",
+          "audio": "/src/assets/audio/vocabulary/module-04/window.mp3",
+          "hint": "Window = Janela"
+        },
+        {
+          "id": "4-18",
+          "portugues": "porta",
+          "english": "door",
+          "audio": "/src/assets/audio/vocabulary/module-04/door.mp3",
+          "hint": "Door = Porta"
+        },
+        {
+          "id": "4-19",
+          "portugues": "despertador",
+          "english": "alarm clock",
+          "audio": "/src/assets/audio/vocabulary/module-04/alarm-clock.mp3",
+          "hint": "Alarm clock = Despertador"
+        },
+        {
+          "id": "4-20",
+          "portugues": "ar-condicionado",
+          "english": "air conditioner",
+          "audio": "/src/assets/audio/vocabulary/module-04/air-conditioner.mp3",
+          "hint": "Air conditioner = Ar-condicionado"
+        }
       ]
     },
     {
       "id": 5,
       "title": "Módulo 5",
       "lessons": [
-        { "id": "5-1", "portugues": "Bom trabalho", "english": "Good job", "audio": "/src/assets/audio/vocabulary/module-05/good-job.mp3", "hint": "Good = Bom" },
-        { "id": "5-2", "portugues": "Prazer em conhecer", "english": "Nice meeting", "audio": "/src/assets/audio/vocabulary/module-05/nice-meeting.mp3", "hint": "Nice = Prazeroso/Bom" },
-        { "id": "5-3", "portugues": "Muito tempo", "english": "Long time", "audio": "/src/assets/audio/vocabulary/module-05/long-time.mp3", "hint": "Long = Longo/Muito" },
-        { "id": "5-4", "portugues": "Eu também", "english": "Me too", "audio": "/src/assets/audio/vocabulary/module-05/me-too.mp3", "hint": "Me = Eu/Mim" },
-        { "id": "5-5", "portugues": "Na verdade não", "english": "Not really", "audio": "/src/assets/audio/vocabulary/module-05/not-really.mp3", "hint": "Not = Não" },
-        { "id": "5-6", "portugues": "Eu acho", "english": "I guess", "audio": "/src/assets/audio/vocabulary/module-05/i-guess.mp3", "hint": "I = Eu" },
-        { "id": "5-7", "portugues": "Parece interessante", "english": "Sounds interesting", "audio": "/src/assets/audio/vocabulary/module-05/sounds-interesting.mp3", "hint": "Sounds = Soa/Parece" },
-        { "id": "5-8", "portugues": "Melhoras", "english": "Get well", "audio": "/src/assets/audio/vocabulary/module-05/get-well.mp3", "hint": "Get = Ficar/Obter" },
-        { "id": "5-9", "portugues": "Saúde", "english": "Bless you", "audio": "/src/assets/audio/vocabulary/module-05/bless-you.mp3", "hint": "Bless = Abençoe" },
-        { "id": "5-10", "portugues": "Foi um prazer", "english": "My pleasure", "audio": "/src/assets/audio/vocabulary/module-05/my-pleasure.mp3", "hint": "My = Meu" },
-        { "id": "5-11", "portugues": "De nada", "english": "You're welcome", "audio": "/src/assets/audio/vocabulary/module-05/youre-welcome.mp3", "hint": "Welcome = Bem-vindo/Disponha" },
-        { "id": "5-12", "portugues": "Sem problemas", "english": "No worries", "audio": "/src/assets/audio/vocabulary/module-05/no-worries.mp3", "hint": "No = Não/Sem" },
-        { "id": "5-13", "portugues": "Momento perfeito", "english": "Perfect timing", "audio": "/src/assets/audio/vocabulary/module-05/perfect-timing.mp3", "hint": "Perfect = Perfeito" },
-        { "id": "5-14", "portugues": "Ótima ideia", "english": "Great idea", "audio": "/src/assets/audio/vocabulary/module-05/great-idea.mp3", "hint": "Great = Ótima/Grande" },
-        { "id": "5-15", "portugues": "Bom ponto", "english": "Good point", "audio": "/src/assets/audio/vocabulary/module-05/good-point.mp3", "hint": "Good = Bom" },
-        { "id": "5-16", "portugues": "Mantenha-se forte", "english": "Stay strong", "audio": "/src/assets/audio/vocabulary/module-05/stay-strong.mp3", "hint": "Stay = Fique/Mantenha-se" },
-        { "id": "5-17", "portugues": "Pense positivo", "english": "Think positive", "audio": "/src/assets/audio/vocabulary/module-05/think-positive.mp3", "hint": "Think = Pense" },
-        { "id": "5-18", "portugues": "Sonhe grande", "english": "Dream big", "audio": "/src/assets/audio/vocabulary/module-05/dream-big.mp3", "hint": "Dream = Sonhe" },
-        { "id": "5-19", "portugues": "Seja você mesmo/a", "english": "Be yourself", "audio": "/src/assets/audio/vocabulary/module-05/be-yourself.mp3", "hint": "Be = Seja" },
-        { "id": "5-20", "portugues": "Nunca pare", "english": "Never stop", "audio": "/src/assets/audio/vocabulary/module-05/never-stop.mp3", "hint": "Never = Nunca" }
+        {
+          "id": "5-1",
+          "portugues": "roupas",
+          "english": "clothes",
+          "audio": "/src/assets/audio/vocabulary/module-05/clothes.mp3",
+          "hint": "Clothes = Roupas"
+        },
+        {
+          "id": "5-2",
+          "portugues": "camiseta",
+          "english": "t-shirt",
+          "audio": "/src/assets/audio/vocabulary/module-05/t-shirt.mp3",
+          "hint": "T-shirt = Camiseta"
+        },
+        {
+          "id": "5-3",
+          "portugues": "camisa",
+          "english": "shirt",
+          "audio": "/src/assets/audio/vocabulary/module-05/shirt.mp3",
+          "hint": "Shirt = Camisa"
+        },
+        {
+          "id": "5-4",
+          "portugues": "calça",
+          "english": "pants",
+          "audio": "/src/assets/audio/vocabulary/module-05/pants.mp3",
+          "hint": "Pants = Calça"
+        },
+        {
+          "id": "5-5",
+          "portugues": "bermuda",
+          "english": "shorts",
+          "audio": "/src/assets/audio/vocabulary/module-05/shorts.mp3",
+          "hint": "Shorts = Bermuda"
+        },
+        {
+          "id": "5-6",
+          "portugues": "saia",
+          "english": "skirt",
+          "audio": "/src/assets/audio/vocabulary/module-05/skirt.mp3",
+          "hint": "Skirt = Saia"
+        },
+        {
+          "id": "5-7",
+          "portugues": "vestido",
+          "english": "dress",
+          "audio": "/src/assets/audio/vocabulary/module-05/dress.mp3",
+          "hint": "Dress = Vestido"
+        },
+        {
+          "id": "5-8",
+          "portugues": "jaqueta",
+          "english": "jacket",
+          "audio": "/src/assets/audio/vocabulary/module-05/jacket.mp3",
+          "hint": "Jacket = Jaqueta"
+        },
+        {
+          "id": "5-9",
+          "portugues": "moletom",
+          "english": "hoodie",
+          "audio": "/src/assets/audio/vocabulary/module-05/hoodie.mp3",
+          "hint": "Hoodie = Moletom"
+        },
+        {
+          "id": "5-10",
+          "portugues": "sapatos",
+          "english": "shoes",
+          "audio": "/src/assets/audio/vocabulary/module-05/shoes.mp3",
+          "hint": "Shoes = Sapatos"
+        },
+        {
+          "id": "5-11",
+          "portugues": "tênis",
+          "english": "sneakers",
+          "audio": "/src/assets/audio/vocabulary/module-05/sneakers.mp3",
+          "hint": "Sneakers = Tênis"
+        },
+        {
+          "id": "5-12",
+          "portugues": "meias",
+          "english": "socks",
+          "audio": "/src/assets/audio/vocabulary/module-05/socks.mp3",
+          "hint": "Socks = Meias"
+        },
+        {
+          "id": "5-13",
+          "portugues": "chinelo",
+          "english": "flip-flops",
+          "audio": "/src/assets/audio/vocabulary/module-05/flip-flops.mp3",
+          "hint": "Flip-flops = Chinelo"
+        },
+        {
+          "id": "5-14",
+          "portugues": "pijama",
+          "english": "pajamas",
+          "audio": "/src/assets/audio/vocabulary/module-05/pajamas.mp3",
+          "hint": "Pajamas = Pijama"
+        },
+        {
+          "id": "5-15",
+          "portugues": "roupa íntima",
+          "english": "underwear",
+          "audio": "/src/assets/audio/vocabulary/module-05/underwear.mp3",
+          "hint": "Underwear = Roupa íntima"
+        },
+        {
+          "id": "5-16",
+          "portugues": "sutiã",
+          "english": "bra",
+          "audio": "/src/assets/audio/vocabulary/module-05/bra.mp3",
+          "hint": "Bra = Sutiã"
+        },
+        {
+          "id": "5-17",
+          "portugues": "cinto",
+          "english": "belt",
+          "audio": "/src/assets/audio/vocabulary/module-05/belt.mp3",
+          "hint": "Belt = Cinto"
+        },
+        {
+          "id": "5-18",
+          "portugues": "boné",
+          "english": "cap",
+          "audio": "/src/assets/audio/vocabulary/module-05/cap.mp3",
+          "hint": "Cap = Boné"
+        },
+        {
+          "id": "5-19",
+          "portugues": "chapéu",
+          "english": "hat",
+          "audio": "/src/assets/audio/vocabulary/module-05/hat.mp3",
+          "hint": "Hat = Chapéu"
+        },
+        {
+          "id": "5-20",
+          "portugues": "luvas",
+          "english": "gloves",
+          "audio": "/src/assets/audio/vocabulary/module-05/gloves.mp3",
+          "hint": "Gloves = Luvas"
+        }
       ]
     }
   ]
