@@ -14,6 +14,10 @@ if (menuOpenIcon) menuOpenIcon.addEventListener('click', toggleMenu);
 if (menuCloseIcon) menuCloseIcon.addEventListener('click', toggleMenu);
 if (overlay) overlay.addEventListener('click', toggleMenu);
 
+function normalize(text) {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+}
+
 /* Classe Principal */
 class LanguageLearning {
     constructor() {
@@ -33,6 +37,7 @@ class LanguageLearning {
             playHint: document.getElementById('playHint'),
             hintText: document.getElementById('hintText'),
             userInput: document.getElementById('translationInput'),
+            micButton: document.getElementById('micButton'),
         };
 
         this.init();
@@ -42,6 +47,7 @@ class LanguageLearning {
         await this.loadLessons();
         this.setupEventListeners();
         this.setInitialButtonColors();
+        this.setupVoiceInput();
     }
 
     setInitialButtonColors() {
@@ -166,12 +172,62 @@ class LanguageLearning {
         }
     }
 
+    setupVoiceInput() {
+        const micButton = this.elements.micButton;
+        if (!micButton) return;
+
+        const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognitionAPI) {
+            micButton.style.display = 'none';
+            return;
+        }
+
+        const recognition = new SpeechRecognitionAPI();
+        recognition.lang = 'pt-BR';
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        let listening = false;
+
+        const resetVoiceUI = () => {
+            listening = false;
+            micButton.classList.remove('listening');
+        };
+
+        recognition.onstart = () => {
+            listening = true;
+            micButton.classList.add('listening');
+        };
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            this.elements.userInput.value = transcript;
+            this.checkTranslation();
+        };
+
+        recognition.onend = resetVoiceUI;
+        recognition.onerror = resetVoiceUI;
+
+        micButton.addEventListener('click', () => {
+            if (listening) {
+                recognition.stop();
+                return;
+            }
+            try {
+                recognition.start();
+            } catch (e) {
+                resetVoiceUI();
+            }
+        });
+    }
+
     checkTranslation() {
         if (!this.currentLesson || !this.elements.userInput) return;
 
         // Comparação usando o campo 'portugues'
-        const userText = this.elements.userInput.value.trim().toLowerCase();
-        const correctText = this.currentLesson.portugues.trim().toLowerCase();
+        const userText = normalize(this.elements.userInput.value);
+        const correctText = normalize(this.currentLesson.portugues);
 
         if (userText === correctText) {
             // ACERTOU

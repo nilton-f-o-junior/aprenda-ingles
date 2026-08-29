@@ -179,13 +179,50 @@ h2 {
   display: block;
   width: 100%;
   margin: 0;
-  padding: 22px 20px;
+  padding: 22px 56px 22px 20px;
   border: none;
   outline: none;
   font-family: var(--font-main);
   font-size: 1rem;
   color: #333;
   background-color: var(--color-light-gray);
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.mic-button {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  transition: background-color .2s, color .2s;
+}
+
+.mic-button:hover {
+  background: rgba(0, 0, 0, .08);
+}
+
+.mic-button.listening {
+  color: var(--red);
+  animation: voice-pulse 1s infinite ease-in-out;
+}
+
+@keyframes voice-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .4; }
 }
 
 .controls {
